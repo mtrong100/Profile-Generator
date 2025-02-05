@@ -53,16 +53,10 @@ function App() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white p-5">
-      <h1 className="text-5xl font-bold mb-10 ">Profile Generator</h1>
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white p-5 md:p-10">
+      <h1 className="text-4xl md:text-5xl font-bold mb-8">Profile Generator</h1>
 
-      <div
-        className={`${
-          avatarConfig.name && avatarUrl
-            ? "grid-cols-2 max-w-5xl"
-            : "grid-cols-1 max-w-xl"
-        }  gap-5 items-center  w-full grid`}
-      >
+      <div className={`gap-5 items-center w-full max-w-xl space-y-5`}>
         <div className="bg-gray-800 p-6 rounded-lg shadow-lg w-full">
           <label className="block mb-2">
             Name (Required)
